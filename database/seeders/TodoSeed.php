@@ -17,14 +17,14 @@ class TodoSeed extends Seeder
     {
         Todo::query()
             ->create([
-                'titile' => 'Title One',
+                'title' => 'Title One',
                 'content' => 'Content One',
                 'due' => 'Mondays',
             ]);
 
         Todo::query()
             ->create([
-                'titile' => 'Title Two',
+                'title' => 'Title Two',
                 'content' => 'Content Two',
                 'due' => 'Tuesdays',
             ]);

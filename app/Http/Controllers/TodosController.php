@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Todo;
 use Illuminate\Http\Request;
 
 class TodosController extends Controller
@@ -13,7 +14,9 @@ class TodosController extends Controller
      */
     public function index()
     {
-        //
+        $todos = Todo::query()->get();
+
+        return view('index')->with('todos', $todos);
     }
 
     /**

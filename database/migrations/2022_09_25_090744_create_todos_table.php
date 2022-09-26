@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
-            $table->string('titile');
+            $table->string('title');
             $table->mediumText('content');
             $table->string('due');
             $table->timestamps();
